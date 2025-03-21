@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", "Inter Fallback", sans-serif;
 }
 
 :root {
@@ -40,15 +41,27 @@ body {
 
 }
 .titulo {
-  margin-bottom: 180px;
-  font-family: "Arial Narrow", Arial, sans-serif;
-  color: yellow;
+  padding: 2rem;
+  margin-bottom: 100%;
   position: absolute;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: yellow;
+  overflow: hidden;
+  animation: fadeIn 3s ease-in-out forwards;
+  /* letter-spacing: 10px; */
+  /* display: -webkit-box; */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-align: center;
+  font-family: "Winky Sans", sans-serif;
+  /* font-stretch: ultra-condensed; */
+  /* font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 10px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
-  text-align: center;
+  text-align: center; */
 }
 @keyframes fadeIn {
   from {
@@ -58,6 +71,14 @@ body {
     opacity: 1;
   }
 }
+
+
+/* .winky-sans- {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 
 .night {
   z-index: -1;
@@ -105,6 +126,7 @@ body {
 .flowers {
   position: relative;
   transform: scale(0.9);
+  /* overflow: hidden; */
   /*margin-bottom: 100px;
   */
 }
@@ -113,7 +135,7 @@ body {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
 .flowers {
       font-size: 14px;
-      margin-bottom: 35%;
+      margin-bottom: 10%;
       letter-spacing: 3px;
       transform: scale(1.0);
 }
@@ -1638,7 +1660,7 @@ h1 {
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas pequeñas */
   h1 {
-      font-size: 1.5em;
+      font-size: 1em;
   }
 }
 

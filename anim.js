@@ -1,6 +1,6 @@
 // Sincronizar las letras con la canción
 var audio = document.querySelector("audio");
-var lyrics = document.querySelector("#lyrics");
+// var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
@@ -46,12 +46,12 @@ function updateLyrics() {
     var opacity = Math.min(1, (time - currentLine.time) / fadeInDuration);
 
     // Aplica el efecto de aparición
-    lyrics.style.opacity = opacity;
-    lyrics.innerHTML = currentLine.text;
+    // lyrics.style.opacity = opacity;
+    // lyrics.innerHTML = currentLine.text;
   } else {
     // Restablece la opacidad y el contenido si no hay una línea actual
-    lyrics.style.opacity = 0;
-    lyrics.innerHTML = "";
+    // lyrics.style.opacity = 0;
+    // lyrics.innerHTML = "";
   }
 }
 
