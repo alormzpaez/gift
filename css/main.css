@@ -42,7 +42,8 @@ body {
 }
 .titulo {
   padding: 2rem;
-  margin-bottom: 100%;
+  margin-bottom: 110%;
+  font-size: 1.2rem;
   position: absolute;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
